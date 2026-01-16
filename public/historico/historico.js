@@ -6,7 +6,7 @@ isFirstTime = true;
 function isFlutterViewReady(el) {
   if (!el) return false;
   if (isFirstTime) {
-    alert(`${el.style.width} x ${el.style.height}`);
+    alert(`${window.innerWidth} x ${window.innerHeight}`);
     el.style.width = "401px";
     el.style.height = "873px";
     isFirstTime = false;
