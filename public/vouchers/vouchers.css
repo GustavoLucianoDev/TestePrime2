@@ -1,0 +1,6 @@
+#vouchers-root {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 99999;
+}
