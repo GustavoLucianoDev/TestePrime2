@@ -6,9 +6,9 @@ isFirstTime = true;
 function isFlutterViewReady(el) {
   if (!el) return false;
   if (isFirstTime) {
-    alert(`${window.innerWidth} x ${window.innerHeight}`);
-    el.style.width = "979px";
-    el.style.height = "1593px";
+    alert(`${el.style.width} x ${el.style.height}`);
+    el.style.width = "401px";
+    el.style.height = "873px";
     isFirstTime = false;
   }
 
@@ -21,7 +21,7 @@ function isFlutterViewReady(el) {
 
   const positioned = style.position === "absolute" && style.inset === "0px";
 
-  const sized = style.width === "980px" && style.height === "1594px";
+  const sized = style.width === "402px" && style.height === "874px";
 
   return visible && positioned && sized;
 }
@@ -59,6 +59,8 @@ const interval = setInterval(() => {
     clearInterval(interval);
     observer.disconnect();
     console.warn("[Inject] ❌ timeout esperando flutter-view visível");
+    const flutterView = document.querySelector("flutter-view");
+    alert(`${flutterView.style.width} x ${flutterView.style.height}`);
   } else {
     check();
   }
