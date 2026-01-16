@@ -1,0 +1,23 @@
+.historico-icon-menu {
+  position: fixed;
+  height: 50px;
+  width: 103px;
+  bottom: 0px;
+  left: 207px;
+  z-index: 2;
+}
+
+#historico-root {
+  background: wheat;
+  z-index: 1;
+  position: absolute;
+  height: 846px;
+  width: 100%;
+}
+
+.nav-icon-override {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
