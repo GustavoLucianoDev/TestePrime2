@@ -6,8 +6,9 @@ isFirstTime = true;
 function isFlutterViewReady(el) {
   if (!el) return false;
   if (isFirstTime) {
-    el.style.width = "413px";
-    el.style.height = "895px";
+    alert(`${el.style.width} x ${el.style.height}`);
+    el.style.width = "401px";
+    el.style.height = "873px";
     isFirstTime = false;
   }
 
@@ -20,7 +21,7 @@ function isFlutterViewReady(el) {
 
   const positioned = style.position === "absolute" && style.inset === "0px";
 
-  const sized = style.width === "414px" && style.height === "896px";
+  const sized = style.width === "402px" && style.height === "874px";
 
   return visible && positioned && sized;
 }
