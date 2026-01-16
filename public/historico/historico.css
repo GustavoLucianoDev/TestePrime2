@@ -1,11 +1,12 @@
 .historico-icon-menu {
   position: fixed;
-  height: 50px;
-  width: 103px;
-  bottom: 0px;
-  left: 207px;
-  z-index: 2;
-  background: red;
+    height: 50px;
+    width: 103px;
+    top: 0;
+    left: 207px;
+    z-index: 2;
+    background: red;
+    margin-top: 100px;
 }
 
 #historico-root {
